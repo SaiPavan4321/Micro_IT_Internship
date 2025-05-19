@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="currencyconverterstyle.css">
+  </head>
+<body>
+  <div class="converter">
+    <h1>Currency Converter</h1>
+    <input type="number" id="amount" placeholder="Enter amount">
+    <select id="fromCurrency">
+      <option value="USD">us USD - US Dollar</option>
+      <option value="EUR">🇪🇺 EUR - Euro</option>
+      <option value="GBP">🇬🇧 GBP - British Pound</option>
+      <option value="JPY">🇯🇵 JPY - Japanese Yen</option>
+      <option value="INR">🇮🇳 INR - Indian Rupee</option>
+      <option value="CAD">🇨🇦 CAD - Canadian Dollar</option>
+      <option value="AUD">🇦🇺 AUD - Australian Dollar</option>
+      <option value="CHF">🇨🇭 CHF - Swiss Franc</option>
+      <option value="CNY">🇨🇳 CNY - Chinese Yuan</option>
+      <option value="ZAR">🇿🇦 ZAR - South African Rand</option>
+    </select>
+
+    <select id="toCurrency">
+      <option value="EUR">🇪🇺 EUR - Euro</option>
+      <option value="USD">🇺🇸 USD - US Dollar</option>
+      <option value="GBP">🇬🇧 GBP - British Pound</option>
+      <option value="JPY">🇯🇵 JPY - Japanese Yen</option>
+      <option value="INR">🇮🇳 INR - Indian Rupee</option>
+      <option value="CAD">🇨🇦 CAD - Canadian Dollar</option>
+      <option value="AUD">🇦🇺 AUD - Australian Dollar</option>
+      <option value="CHF">🇨🇭 CHF - Swiss Franc</option>
+      <option value="CNY">🇨🇳 CNY - Chinese Yuan</option>
+      <option value="ZAR">🇿🇦 ZAR - South African Rand</option>
+    </select>
+
+    <button onclick="convertCurrency()">Convert</button>
+
+    <div class="result" id="result">Converted amount will appear here</div>
+  </div>
+<script src="currencyconverterscript.js"></script>
+</body>
+</html>
